@@ -16,5 +16,5 @@ group :jekyll_plugins do
   gem "jekyll-default-layout"
   gem "jekyll-feed"
   gem "jemoji"
-  gem "jekyll-multiple-languages-plugin"
+  #gem "jekyll-multiple-languages-plugin"
 end
