@@ -16,7 +16,6 @@ body {
   font-family: unquote(map-get($bodytype, font-family));
   font-style: normal;
   font-weight: map-get($bodytype, regular);
-  line-height: 2rem;
 }
 
 // Links.
@@ -247,10 +246,11 @@ a {
     font-weight: map-get($headingtype, regular);
   }
 
+  /*
   small {
     line-height: 1rem;
   }
-
+*/
   .caption {
     @include baseline(theta, $headingtype, 2, 2, all);
 
