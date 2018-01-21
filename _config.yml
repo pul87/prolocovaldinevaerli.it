@@ -75,7 +75,7 @@ defaults:
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
-title: "Alembic" # Site name or title, also used in jekyll-seo-tag
+title: "Proloco Val di Neva Erli" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logo_pro_loco_300px.png" # Site logo, also used in jekyll-seo-tag
 description: "Alembic is a starting point for Jekyll projects. Rather than starting from scratch, this boilerplate is designed to get the ball rolling immediately" # Site description and default description, also used in jekyll-seo-tag
 #url: "" # Site url, also used in jekyll-seo-tag
@@ -88,15 +88,10 @@ avatarurl: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c" # 
 
 # 8. Site navigation
 navigation_header:
-  Home: /
-  #Elements: /elements/
-  Blog: /blog/
-  Categories: /categories/
-  Search: /search/
-  Fork Alembic: https://github.com/daviddarnes/alembic
+  #Home: /
 
 navigation_footer:
-  Created by David Darnes: https://darn.es
+  Created by Paolo Basso: https://www.linkedin.com/in/bassopaolo/
 
 social_links: # Appears in sidebar. Set the urls then uncomment and comment out as desired
   Twitter: https://twitter.com/DavidDarnes
