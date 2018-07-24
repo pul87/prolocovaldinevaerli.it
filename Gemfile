@@ -17,4 +17,6 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jemoji"
   gem "jekyll-multiple-languages-plugin"
+  gem "tzinfo"
+  gem "tzinfo-data"
 end

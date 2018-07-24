@@ -22,7 +22,7 @@ exclude:
 - alembic-jekyll-theme.gemspec
 
 # 2. Installed Gems
-gems:
+plugins:
 - jekyll-sitemap
 - jekyll-mentions
 - jekyll-paginate
@@ -73,7 +73,7 @@ defaults:
       image: "/assets/default-social-image.png" # Default image for sharing
 
 # 7. Site settings
-encoding: utf-8 # Make sure the encoding is right
+encoding: UTF-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
 title: "Proloco Val di Neva Erli" # Site name or title, also used in jekyll-seo-tag
 logo: "/assets/logo_pro_loco_300px.png" # Site logo, also used in jekyll-seo-tag
