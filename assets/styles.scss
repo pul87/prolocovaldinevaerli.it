@@ -86,7 +86,6 @@ body {
 
 .small {
   padding-top: .8rem;
-  color: $captionColour;
   display: inline-block;
 }
 
@@ -94,7 +93,7 @@ body {
   background: $headingColour;
   color: $captionColour;
   a {
-    color: $captionColour;
+    color: $backgroundColour;
     &:hover {
       color: $backgroundColour;
     }
