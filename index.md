@@ -6,6 +6,7 @@ feature_text: |
 feature_image: "/assets/bgd_landing_page.jpg"
 excerpt: "Eventi, natura e tradizioni dall'entroterra ligure"
 ---
+{% include paleovalneva-2019.html %}
 {% include giornalino-2018-2019.html %}
 {% include cards.html %}
 > La **Proloco Val di Neva** realizza e promuove eventi per valorizzare il territorio del comune di Erli con l'intento di far riscoprire le tradizioni, i sapori e i paesaggi dell'entroterra ligure. 
