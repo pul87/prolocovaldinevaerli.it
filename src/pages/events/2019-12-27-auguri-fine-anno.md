@@ -15,7 +15,7 @@ Cari amici e soci, venerdì 27 dopo la messa in onore di San Giovanni ci ritrove
 In quella occasione ai soci che aderiranno al nuovo **Gruppo Sentieri** sarà consegnata la giacca con logo.
 Seguirà un rinfresco.
 
-Non mancherà un pensiero per cuoche/chuochi. 
+Non mancherà un pensiero per cuoche/cuochi. 
 
 Siete tutti invitati a partecipare.
 Il consiglio direttivo Vi Ringrazia tutti e molto per l'impegno che anche quest'anno avete prestato in proloco a favore del Paese.
