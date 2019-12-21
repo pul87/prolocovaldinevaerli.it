@@ -1,10 +1,10 @@
 ---
 templateKey: event-post
-title: Auguri di Fine Anno 🎄
+title: "Auguri di Fine Anno \U0001F384"
 date: 2019-12-27T23:00:00.000Z
+description: ' '
 featuredpost: false
 featuredimage: /img/natale-1.png
-description: 
 tags:
   - natale
 ---
@@ -18,7 +18,7 @@ Seguirà un rinfresco.
 Non mancherà un pensiero per cuoche/chuochi. 
 
 Siete tutti invitati a partecipare.
-Il consiglio direttivo Vi Ringrazia tutti e molto per l'impegno che anche quest'anno avete presraro in proloco a favore del Paese.
+Il consiglio direttivo Vi Ringrazia tutti e molto per l'impegno che anche quest'anno avete prestato in proloco a favore del Paese.
 Auguriamo a Voi e alle vostre famiglie un sereno Natale e a tutti ogni bene anche per il nuovo anno.
 
-*Consiglio direttivo.*
+_Consiglio direttivo._
