@@ -8,6 +8,7 @@ featuredimage: /img/sentiero_anello_erli_praetto_vista_valle.jpg
 gallery:
   - /img/sentiero_anello_erli_praetto_vista_valle.jpg
   - /img/sentiero_anello_erli_praetto_vista_costa.jpg
+  - /img/sentiero_anello_erli_praetto_cartelli.jpg
 tags:
   - sentieri
   - mini-trekking
