@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import Gallery from '../components/Gallery'
 
 export const RoutePostTemplate = ({
   content,
@@ -12,10 +13,15 @@ export const RoutePostTemplate = ({
   description,
   tags,
   title,
+  gallery = [],
   helmet,
 }) => {
   const PostContent = contentComponent || Content
-
+  const images = gallery.map( g => (
+    { 
+      original: g.childImageSharp.original.src, 
+      thumbnail: g.childImageSharp.thumbnail.src 
+    }));
   return (
     <section className="section">
       {helmet || ''}
@@ -26,6 +32,7 @@ export const RoutePostTemplate = ({
               {title}
             </h1>
             <p>{description}</p>
+            <Gallery images={images} />
             <PostContent content={content} />
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
@@ -63,6 +70,7 @@ const RoutePost = ({ data }) => {
         content={post.html}
         contentComponent={HTMLContent}
         description={post.frontmatter.description}
+        gallery={post.frontmatter.gallery}
         helmet={
           <Helmet titleTemplate="%s | Sentiero">
             <title>{`${post.frontmatter.title}`}</title>
@@ -101,6 +109,16 @@ export const pageQuery = graphql`
         title
         description
         tags
+        gallery {
+          childImageSharp {
+            thumbnail: fixed(width: 300) {
+              src
+            }
+            original {
+              src
+            }
+          }
+        }
       }
     }
   }
