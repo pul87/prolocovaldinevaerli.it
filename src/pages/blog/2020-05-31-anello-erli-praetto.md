@@ -2,12 +2,15 @@
 templateKey: blog-post
 title: Anello Erli - Praetto
 date: 2020-05-31T06:44:08.626Z
+published: true
 description: Mini-trekking tra borgo e natura
 featuredimage: /img/sentiero_anello_erli_praetto_vista_valle.webp
 tags:
   - sentieri mini-trekking
 ---
-<iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/3536530678/embed/9e5b4b3a78fe6f4e5e6b216d4e24dcf9fad7a9a6'></iframe>
+![](/img/sentiero_anello_erli_praetto_vista_valle.webp)
+
+<iframe style="float:left;margin-right:15px;"height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/3536530678/embed/9e5b4b3a78fe6f4e5e6b216d4e24dcf9fad7a9a6'></iframe>
 
 Il percorso, ideale per un'escursione di mezza giornata, è perfetto per tutte le età.
 
