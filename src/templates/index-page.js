@@ -5,7 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import EventRoll from '../components/EventRoll'
-//import InstaRoll from '../components/InstaRoll'
+import InstaRoll from '../components/InstaRoll'
 
 import instagram from '../img/social/instagram.svg'
 
@@ -88,7 +88,7 @@ export const IndexPageTemplate = ({
                         <strong>@prolocoerli</strong> su Instagram</a>
                   </h1>
                
-                  {/*<InstaRoll />*/}
+                  <InstaRoll />
                 </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">

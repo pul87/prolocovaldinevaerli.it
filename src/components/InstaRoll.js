@@ -31,7 +31,8 @@ InstaRoll.propTypes = {
     }),
   }),
 }
-
+export default () => (<div/>)
+/*
 export default () => (
   <StaticQuery
     query={graphql`
@@ -61,3 +62,4 @@ export default () => (
     render={(data, count) => <InstaRoll data={data} count={count} />}
   />
 )
+*/

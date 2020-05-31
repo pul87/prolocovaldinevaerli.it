@@ -28,13 +28,13 @@ module.exports = {
         path: `${__dirname}/src/img`,
         name: 'images',
       },
-    },/*
+    },
     {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `prolocoerli`,
       },
-    },*/
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
