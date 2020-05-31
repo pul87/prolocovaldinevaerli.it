@@ -5,7 +5,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import BlogRoll from '../components/BlogRoll'
 import EventRoll from '../components/EventRoll'
-import InstaRoll from '../components/InstaRoll'
+//import InstaRoll from '../components/InstaRoll'
 
 import instagram from '../img/social/instagram.svg'
 

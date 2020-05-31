@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: route-post
 title: Anello Erli - Praetto
 date: 2020-05-31T06:44:08.626Z
 published: true
