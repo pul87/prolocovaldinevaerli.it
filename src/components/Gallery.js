@@ -5,9 +5,11 @@ import 'react-image-gallery/styles/css/image-gallery.css';
 
 
 const Gallery = ({ images = []}) => {
-    console.log(images);
     return (
-        <ImageGallery items={images} />
+        <div>
+            <h4>Immagini</h4>
+            <ImageGallery   items={images} />
+        </div>
     );
 }
 
