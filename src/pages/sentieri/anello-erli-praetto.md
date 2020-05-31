@@ -3,7 +3,7 @@ templateKey: route-post
 title: Anello Erli - Praetto
 date: 2020-05-31T06:44:08.626Z
 published: true
-description: Mini-trekking tra borgo e natura
+description: Erli, trekking tra borgo e natura
 featuredimage: /img/sentiero_anello_erli_praetto_vista_valle.webp
 tags:
   - sentieri

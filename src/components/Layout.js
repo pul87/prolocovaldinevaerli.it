@@ -14,7 +14,7 @@ const TemplateWrapper = ({ children }) => {
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-
+        <meta name="keywords" content="erli,italia,savona,turismo,trekking,outdoor,proloco,eventi" />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
