@@ -22,3 +22,5 @@ Da qui il sentiero continua fino a raggiungere la frazione **Praetto** dove è p
 Da qui l'itinerario continua per tornare alla frazione Costa percorrendo prima un breve tratto di strada comunale asfaltata per poi riprendere il sentiero che porta alla frazione chiudendo l'anello fino a terminare il percorso al bar **Da Lisetta** dove è possibile trovare ristoro.
 
 Questi itinerari sono pensati per poter essere percorsi in tutta tranquillità potendo conoscere il borgo della Costa nella prima parte, ammirare la vista sulla valle nella seconda e godere dell'aria fresca e pura e della natura incontaminata della frazione più alta di Erli nella terza parte.
+
+[Clicca qui per vedere tutti i dettagli del percorso](https://www.strava.com/activities/anello-erli-praetto-3536530678?utm_campaign=ride_share&utm_content=59892579&utm_medium=widget)
