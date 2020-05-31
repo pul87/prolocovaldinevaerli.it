@@ -6,7 +6,7 @@ published: true
 description: ''
 featuredimage: /img/pulizia_sentieri_ponte_1.jpg
 tags:
-  - sentieristica
+  - sentieri
 ---
 ![](/img/pulizia_sentieri_ponte_1.jpg)
 

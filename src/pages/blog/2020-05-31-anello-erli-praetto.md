@@ -6,7 +6,8 @@ published: true
 description: Mini-trekking tra borgo e natura
 featuredimage: /img/sentiero_anello_erli_praetto_vista_valle.webp
 tags:
-  - sentieri mini-trekking
+  - sentieri
+  - mini-trekking
 ---
 ![](/img/sentiero_anello_erli_praetto_vista_valle.webp)
 

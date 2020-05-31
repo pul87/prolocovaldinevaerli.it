@@ -88,7 +88,7 @@ export const IndexPageTemplate = ({
                         <strong>@prolocoerli</strong> su Instagram</a>
                   </h1>
                
-                  <InstaRoll />
+                  {/*<InstaRoll />*/}
                 </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
