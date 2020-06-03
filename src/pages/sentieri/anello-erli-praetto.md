@@ -7,10 +7,8 @@ description: 'Erli, trekking tra borgo e natura'
 featuredimage: /img/sentiero_anello_erli_praetto_vista_valle.jpg
 gallery:
   - /img/sentiero_anello_erli_praetto_vista_costa.jpg
-  - /img/sentiero_anello_erli_praetto_vista_gazzo.jpg
   - /img/sentiero_anello_erli_praetto_cartelli.jpg
   - /img/sentiero_anello_erli_praetto_segnaletica.jpg
-  - /img/sentiero_anello_erli_praetto_vista_gazzo.jpg
 tags:
   - sentieri
   - mini-trekking
