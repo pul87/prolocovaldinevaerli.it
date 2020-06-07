@@ -17,11 +17,12 @@ export const RoutePostTemplate = ({
   helmet,
 }) => {
   const PostContent = contentComponent || Content
-  const images = gallery.map( g => (
-    { 
+  const images = gallery.map( g => {
+    console.log(g)
+    return ({ 
       original: g.childImageSharp.original.src, 
       thumbnail: g.childImageSharp.thumbnail.src 
-    }));
+    })});
   return (
     <section className="section">
       {helmet || ''}
@@ -33,7 +34,13 @@ export const RoutePostTemplate = ({
             </h2>
             <p><small>{description}</small></p>
             <PostContent content={content} />
-            <Gallery images={images} />
+
+              <div className="columns">
+                <div className="column is-10 is-offset-1">
+                  <Gallery images={images} />
+                </div>
+              </div>
+
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>

@@ -9,14 +9,21 @@ gallery:
   - /img/sentiero_anello_erli_praetto_vista_costa.jpg
   - /img/sentiero_anello_erli_praetto_cartelli.jpg
   - /img/sentiero_anello_erli_praetto_segnaletica.jpg
+  - /img/sentiero_anello_erli_praetto_001.jpg
+  - /img/sentiero_anello_erli_praetto_002.jpg
+  - /img/sentiero_anello_erli_praetto_003.jpg
+  - /img/sentiero_anello_erli_praetto_004.jpg
+  - /img/sentiero_anello_erli_praetto_005.jpg
+  - /img/sentiero_anello_erli_praetto_006.jpg
 tags:
   - sentieri
   - mini-trekking
 ---
 
-![](/img/sentiero_anello_erli_praetto_vista_valle.jpg)
+<div style="margin-bottom: 30px">
+<iframe frameBorder="0" scrolling="no" src="https://it.wikiloc.com/wikiloc/spatialArtifacts.do?event=view&id=50211380&measures=off&title=on&near=off&images=on&maptype=H" width="100%" height="400"></iframe><div style="background-color:#fff;color:#777;font-size:11px;line-height:16px;">Powered by <a style="color:#06d;font-size:11px;line-height:16px;" target="_blank" href="https://it.wikiloc.com">Wikiloc</a></div>
+</div>
 
-<iframe style="float:left;margin-right:15px;margin-bottom: 10px;"height='405' width='100%' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/3536530678/embed/9e5b4b3a78fe6f4e5e6b216d4e24dcf9fad7a9a6'></iframe>
 
 Il percorso, ideale per un'escursione di mezza giornata, è perfetto per tutte le età.
 

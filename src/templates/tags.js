@@ -6,19 +6,19 @@ import Layout from '../components/Layout'
 class TagRoute extends React.Component {
   render() {
     const posts = this.props.data.allMarkdownRemark.edges
-    const postLinks = posts.map(post => (
-      <li key={post.node.fields.slug}>
+    const postLinks = posts.map(post => {
+      const { title, description } = post.node.frontmatter;
+      return (<li key={post.node.fields.slug}>
         <Link to={post.node.fields.slug}>
-          <h2 className="is-size-2">{post.node.frontmatter.title}</h2>
+          <strong>{title} </strong>
+          {description ? (<small> - {description}</small>) : null}
         </Link>
-      </li>
-    ))
+      </li>)
+    })
     const tag = this.props.pageContext.tag
     const title = this.props.data.site.siteMetadata.title
     const totalCount = this.props.data.allMarkdownRemark.totalCount
-    const tagHeader = `${totalCount} post${
-      totalCount === 1 ? '' : 's'
-    } tagged with “${tag}”`
+    const tagHeader = `${totalCount} post con tag “${tag}”`
 
     return (
       <Layout>
@@ -33,7 +33,7 @@ class TagRoute extends React.Component {
                 <h3 className="title is-size-4 is-bold-light">{tagHeader}</h3>
                 <ul className="taglist">{postLinks}</ul>
                 <p>
-                  <Link to="/tags/">Browse all tags</Link>
+                  <Link to="/tags/">Cerca tutti i tag</Link>
                 </p>
               </div>
             </div>
@@ -66,6 +66,7 @@ export const tagPageQuery = graphql`
           }
           frontmatter {
             title
+            description
           }
         }
       }
