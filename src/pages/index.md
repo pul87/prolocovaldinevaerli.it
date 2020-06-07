@@ -8,13 +8,12 @@ mainpitch:
   title: Pro Loco Val di Neva
   description: |+
 
-    Organizziamo eventi e promuoviamo il territorio del comune di Erli.
+    Organizziamo eventi e promuoviamo il territorio del comune di Erli
 
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Sito di promozione turistica del comune di Erli.
+  Qui trovi le notizie, gli eventi, i sentieri per il trekking e l'outdoor nella Alta Val Neva, curati dalla
+  Proloco di Erli.
 intro:
   blurbs:
     - image: /img/coffee.png

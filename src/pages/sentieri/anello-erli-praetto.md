@@ -3,8 +3,9 @@ templateKey: route-post
 title: Anello Erli - Praetto
 date: 2020-05-31T06:44:08.626Z
 published: true
-description: 'Erli, trekking tra borgo e natura'
-featuredimage: /img/sentiero_anello_erli_praetto_vista_valle.jpg
+description: Erli, trekking tra borgo e natura
+featuredimage: /img/sentiero_anello_erli_praetto_003.jpg
+gpx: /gpx/anello-erli-praetto.gpx
 gallery:
   - /img/sentiero_anello_erli_praetto_vista_costa.jpg
   - /img/sentiero_anello_erli_praetto_cartelli.jpg
@@ -35,6 +36,6 @@ Da qui l'itinerario continua per tornare alla frazione Costa percorrendo prima u
 
 Questi itinerari sono pensati per poter essere percorsi in tutta tranquillità potendo conoscere il borgo della Costa nella prima parte, ammirare la vista sulla valle nella seconda e godere della natura incontaminata della frazione più alta di Erli nella terza parte.
 
-[Clicca qui per vedere tutti i dettagli](https://www.strava.com/activities/anello-erli-praetto-3536530678?utm_campaign=ride_share&utm_content=59892579&utm_medium=widget)
+<a href="https://www.strava.com/activities/anello-erli-praetto-3536530678?utm_campaign=ride_share&utm_content=59892579&utm_medium=widget" target="_blank">Clicca qui per vedere tutti i dettagli</a>
 
 <br/>

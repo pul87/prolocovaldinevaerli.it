@@ -10,20 +10,24 @@ export default class BlogIndexPage extends React.Component {
         <div
           className="full-width-image-container margin-top-0"
           style={{
-            backgroundImage: `url('/img/vista-erli-pale-eoliche.jpg')`,
+            backgroundImage: `url('/img/sentiero_anello_erli_praetto_s_vert_001.jpg')`,
           }}
         >
-          <h1
+          <h2
             className="has-text-weight-bold is-size-1"
             style={{
               boxShadow: '0.5rem 0 0 #F99808, -0.5rem 0 0 #F99808',
               backgroundColor: '#F99808',
               color: 'white',
-              padding: '1rem',
+              padding: '0.6rem',
             }}
           >
-            Tutti i sentieri
-          </h1>
+            I sentieri 
+            <small style={{
+              display: "block",
+              fontSize: "0.9rem"
+            }}>Outdoor e trekking a Erli</small>
+          </h2>
         </div>
         <section className="section">
           <div className="container">
