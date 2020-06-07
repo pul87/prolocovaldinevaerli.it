@@ -32,7 +32,7 @@ L'itinerario, con partenza dal bar **Da Lisetta** di Erli, si inerpica per le st
 
 Da qui il sentiero continua fino a raggiungere la frazione **Praetto** dove è possibile fermarsi alla chiesetta per rilassarsi e godere della natura e tranquillità del luogo.
 
-Da qui l'itinerario continua per tornare alla frazione Costa percorrendo prima un breve tratto di strada comunale asfaltata per poi riprendere il sentiero che porta alla frazione chiudendo l'anello fino a terminare il percorso al bar **Da Lisetta** dove è possibile trovare ristoro.
+L'itinerario poi continua per tornare alla frazione Costa percorrendo prima un breve tratto di strada comunale asfaltata per poi riprendere il sentiero che porta alla frazione chiudendo l'anello fino a terminare il percorso al bar **Da Lisetta** dove è possibile trovare ristoro.
 
 Questi itinerari sono pensati per poter essere percorsi in tutta tranquillità potendo conoscere il borgo della Costa nella prima parte, ammirare la vista sulla valle nella seconda e godere della natura incontaminata della frazione più alta di Erli nella terza parte.
 
