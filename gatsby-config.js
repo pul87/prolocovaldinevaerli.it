@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Proloco Val di Neva Erli',
+    title: 'Proloco Erli',
     description:
-      'Sito di promozione turistica del comune dei Erli, ALta Val Neva, Liguria',
+      'Trekking, outdoor eventi e promozione turistica del comune dei Erli, ALta Val Neva, Liguria',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
