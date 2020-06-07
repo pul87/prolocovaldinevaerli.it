@@ -6,6 +6,7 @@ import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import Gallery from '../components/Gallery'
+import Breadcrumb from '../components/Breadcrumb';
 
 export const RoutePostTemplate = ({
   content,
@@ -15,6 +16,7 @@ export const RoutePostTemplate = ({
   title,
   gallery = [],
   gpx,
+  slug,
   helmet,
 }) => {
 
@@ -30,6 +32,13 @@ export const RoutePostTemplate = ({
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
+
+              <Breadcrumb paths={[
+                { name: "Home", href:"/", active: false },
+                { name: "Sentieri", href:"/sentieri", active: false },
+                { name: title, href:`${slug}`, active: true }
+              ]} />
+
             <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
               {title}
             </h2>
@@ -99,6 +108,7 @@ const RoutePost = ({ data }) => {
         description={post.frontmatter.description}
         gallery={post.frontmatter.gallery}
         gpx={post.frontmatter.gpx}
+        slug={post.fields.slug}
         helmet={
           <Helmet titleTemplate="%s | Sentiero">
             <title>{`${post.frontmatter.title}`}</title>
@@ -132,6 +142,9 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
+      fields {
+        slug
+      }
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         title
