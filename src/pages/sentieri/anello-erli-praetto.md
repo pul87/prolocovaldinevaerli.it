@@ -36,6 +36,4 @@ L'itinerario poi continua per tornare alla frazione Costa percorrendo prima un b
 
 Questi itinerari sono pensati per poter essere percorsi in tutta tranquillità potendo conoscere il borgo della Costa nella prima parte, ammirare la vista sulla valle nella seconda e godere della natura incontaminata della frazione più alta di Erli nella terza parte.
 
-<a href="https://www.strava.com/activities/anello-erli-praetto-3536530678?utm_campaign=ride_share&utm_content=59892579&utm_medium=widget" target="_blank">Clicca qui per vedere tutti i dettagli</a>
-
 <br/>

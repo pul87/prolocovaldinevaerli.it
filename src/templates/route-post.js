@@ -54,7 +54,7 @@ export const RoutePostTemplate = ({
               </thead>
               <tbody>
                 <tr>
-                  <td>Facile</td>
+                  <td>Escursionistico</td>
                   <td>2h</td>
                   <td>sì</td>
                   <td><a href={gpx}>GPX</a></td>
