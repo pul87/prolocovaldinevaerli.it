@@ -35,21 +35,21 @@ export const RoutePostTemplate = ({
 
               <Breadcrumb paths={[
                 { name: "Home", href:"/", active: false },
-                { name: "Sentieri", href:"/sentieri", active: false },
-                { name: title, href:`${slug}`, active: true }
+                { name: "Sentieri", href:"/sentieri", active: false }
               ]} />
 
             <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
               {title}
             </h2>
             <p><small>{description} - <a href={`${gpx}`}>Scarica il tracciato GPX</a> </small></p> 
-            <table className="table is-bordered">
+            <div className="table-container">
+            <table className="table is-bordered is-fullwidth">
               <thead>
                 <tr>
                   <th>Difficoltà</th>
-                  <th>Tempo di percorrenza</th>
-                  <th>Adatto a bambini</th>
-                  <th>Tracciato GPX</th>
+                  <th>Tempo</th>
+                  <th>Bambini</th>
+                  <th>Tracciato</th>
                 </tr>
               </thead>
               <tbody>
@@ -57,11 +57,12 @@ export const RoutePostTemplate = ({
                   <td>Facile</td>
                   <td>2h</td>
                   <td>sì</td>
-                  <td><a href={gpx}>Scarica</a></td>
+                  <td><a href={gpx}>GPX</a></td>
                 </tr>
               </tbody>
 
             </table>
+            </div>
             <PostContent content={content} />
 
               <div className="columns">
