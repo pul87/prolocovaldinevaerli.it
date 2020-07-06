@@ -6,6 +6,8 @@ published: true
 description: Erli, trekking tra borgo e natura
 featuredimage: /img/sentiero_anello_erli_praetto_003.jpg
 gpx: /gpx/anello-erli-praetto.gpx
+duration: 2h
+difficulty: Escursionistico (E)
 gallery:
   - /img/sentiero_anello_erli_praetto_vista_costa.jpg
   - /img/sentiero_anello_erli_praetto_cartelli.jpg

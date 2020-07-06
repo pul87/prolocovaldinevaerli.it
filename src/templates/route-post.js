@@ -16,6 +16,8 @@ export const RoutePostTemplate = ({
   title,
   gallery = [],
   gpx,
+  duration,
+  difficulty,
   slug,
   helmet,
 }) => {
@@ -47,15 +49,15 @@ export const RoutePostTemplate = ({
               <thead>
                 <tr>
                   <th>Difficoltà</th>
-                  <th>Tempo</th>
+                  <th>Durata</th>
                   <th>Bambini</th>
                   <th>Tracciato</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Escursionistico</td>
-                  <td>2h</td>
+                  <td>{difficulty}</td>
+                  <td>{duration}</td>
                   <td>sì</td>
                   <td><a href={gpx}>GPX</a></td>
                 </tr>
@@ -109,6 +111,8 @@ const RoutePost = ({ data }) => {
         description={post.frontmatter.description}
         gallery={post.frontmatter.gallery}
         gpx={post.frontmatter.gpx}
+        duration={post.frontmatter.duration}
+        difficulty={post.frontmatter.difficulty}
         slug={post.fields.slug}
         helmet={
           <Helmet titleTemplate="%s | Sentiero">
@@ -152,6 +156,8 @@ export const pageQuery = graphql`
         description
         tags
         gpx
+        duration
+        difficulty
         gallery {
           childImageSharp {
             thumbnail: fixed(width: 300) {
