@@ -43,6 +43,11 @@ La tipologia di sentiero in questo caso è **Escursionistico impegnativo (E+)**.
 
 [Clicca qui per maggiori dettagli, mappe e gps](/sentieri/erli-cerisola)
 
+In conclusione tutti i sentieri proposti sono facilmente percorribili e speriamo possano far conoscere meglio il nostro paese e una valle, che pur essendo stupenda, è ancora poco conosciuta e di nicchia rispetto ai comuni itinerari turistici.
+
+Se vieni a trovarci ricorda di farcelo sapere tramite i nostri canali **social**, qui sotto trovi i riferimenti!!
+
+> [A questa pagina](/sentieri) trovi tutti gli articoli sui sentieri e puoi seguirci su **Facebook** [@prolocovaldinevaerli](https://www.facebook.com/prolocovaldinevaerli) e **Instagram** [@prolocoerli](https://www.instagram.com/prolocoerli/)
 
 
 
