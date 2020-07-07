@@ -12,7 +12,7 @@ tags:
 ---
 Da diversi mesi la **Proloco** ha iniziato un'opera di selezione e pulizia di alcuni sentieri scegliendo in base alla bellezza del percorso, semplicità di percorrenza e alla storia che li lega al paese.
 
-Sono stati mesi di impegno e fermento, un gruppo nutrito di soci della proloco (che ringraziamo), si è reso disponibile alla pulizia, manutenzione e segnalazione dei sentieri ([maggiori informazioni in questo articolo](/blog/pulizia-sentieri)).
+Sono stati mesi di impegno e fermento, un gruppo nutrito di soci della proloco (che ringraziamo), si è reso disponibile alla pulizia, manutenzione e segnalazione dei sentieri ([maggiori informazioni in questo articolo](/blog/2019-12-21-pulizia-sentieri)).
 
 E' stata rinnovata la segnaletica completa di tempi di percorrenza e a breve verranno anche apposte mappe che consentano una migliore fruizione in loco dei percorsi.
 
