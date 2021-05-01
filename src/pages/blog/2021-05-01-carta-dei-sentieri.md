@@ -11,6 +11,6 @@ Abbiamo una bellissima novità, la carta dei sentieri!
 
 La troverete esposta ad Erli nelle varie bacheche e insieme alla segnaletica dedicata ai diversi percorsi vi accompagnerà alla scoperta di bellissimi itinerari immersi tra la natura e la storia della nostra valle.
 
-
-
 Vi aspettiamo per provarli!!
+
+![](/img/cartello-erli_small.jpg)
