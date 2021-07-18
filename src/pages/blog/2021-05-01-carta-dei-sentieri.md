@@ -13,6 +13,6 @@ La troverete esposta ad Erli nelle varie bacheche e insieme alla segnaletica ded
 
 Vi aspettiamo per provarli!!
 
-****[**Qui**](https://www.prolocovaldinevaerli.it/blog/2021-07-18-scarica-il-depliant-dei-nostri-sentieri/) **trovate tutte le informazioni per scaricare la descrizione e la mappa dei sentieri!**
+[Qui](https://www.prolocovaldinevaerli.it/blog/2021-07-18-scarica-il-depliant-dei-nostri-sentieri/) **trovate tutte le informazioni per scaricare la descrizione e la mappa dei sentieri!**
 
 ![](/img/cartello-erli_small.jpg)
