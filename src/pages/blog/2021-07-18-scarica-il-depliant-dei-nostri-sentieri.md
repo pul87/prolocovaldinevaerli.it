@@ -7,6 +7,8 @@ featuredimage: /img/mockup.jpg
 tags:
   - sentieri
 ---
+![](/img/mockup.jpg)
+
 Da oggi potete **scaricare il nostro depliant e la carta dei sentieri**, che troverete anche affissa sulle bacheche di **Erli**.
 
 Nel depliant troverete una breve descrizione dei sentieri contrassegnati con un **numero e colore specifico** di cui troverete riferimento anche sulla **carta dei sentieri**.
