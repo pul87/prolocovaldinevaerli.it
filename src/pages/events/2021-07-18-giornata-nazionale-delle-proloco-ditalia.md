@@ -4,7 +4,8 @@ title: Giornata nazionale delle Proloco d'Italia
 date: 2021-07-18T08:34:49.585Z
 featuredimage: /img/giornata-nazionale-proloco.png
 tags:
-  - eventi armaveirana
+  - eventi
+  - armaveirana
 ---
 ![Giornata nazionale Proloco d'Italia Erli](/img/giornata-nazionale-proloco.png "Giornata nazionale Proloco d'Italia Erli")
 
