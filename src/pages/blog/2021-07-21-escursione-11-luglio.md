@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: Escursione 11 Luglio
 date: 2021-07-21T19:17:03.713Z
+published: true
 description: Erli e i suoi tesori - Giornata nazionale Proloco d'Italia
 featuredimage: /img/5.jpeg
 tags:
