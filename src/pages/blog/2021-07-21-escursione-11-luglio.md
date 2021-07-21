@@ -28,4 +28,4 @@ Vi lasciamo con qualche fotografia della giornata ed il **tour virtuale della Pi
 
 
 
-<iframe src="https://www.alvire.com/virtual-tour/preview/71774466490cfece06c4c11b345dc5b2" frameborder="0" sandbox="allow-scripts allow-popups allow-top-navigation-by-user-activation allow-forms allow-same-origin" allowfullscreen="" loading="lazy" style=" left: 0px; top: 0px; width: 100%; height: 400px; border-radius: 1px; pointer-events: auto; background-color: rgb(247, 246, 245);"></iframe>
+<iframe src="https://www.alvire.com/virtual-tour/preview/71774466490cfece06c4c11b345dc5b2" frameborder="0" sandbox="allow-scripts allow-popups allow-top-navigation-by-user-activation allow-forms allow-same-origin" allowfullscreen="" loading="lazy" style=" left: 0px; top: 0px; width: 100%; height: 500px; border-radius: 1px; pointer-events: auto; background-color: rgb(247, 246, 245);"></iframe>
