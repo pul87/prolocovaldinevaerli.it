@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
+import Gallery from '../components/Gallery'
 
 export const BlogPostTemplate = ({
   content,
@@ -12,10 +13,15 @@ export const BlogPostTemplate = ({
   description,
   tags,
   title,
+  gallery = [],
   helmet,
 }) => {
   const PostContent = contentComponent || Content
-
+  const images = (gallery || []).map( g => {
+    return ({ 
+      original: g.childImageSharp.original.src, 
+      thumbnail: g.childImageSharp.thumbnail.src 
+    })});
   return (
     <section className="section">
       {helmet || ''}
@@ -27,6 +33,13 @@ export const BlogPostTemplate = ({
             </h1>
             <p>{description}</p>
             <PostContent content={content} />
+
+            <div className="columns">
+              <div className="column is-12">
+                <Gallery images={images} />
+              </div>
+            </div>
+
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>
@@ -74,6 +87,7 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        gallery={post.frontmatter.gallery}
       />
     </Layout>
   )
@@ -97,6 +111,16 @@ export const pageQuery = graphql`
         title
         description
         tags
+        gallery {
+          childImageSharp {
+            thumbnail: fixed(width: 300) {
+              src
+            }
+            original {
+              src
+            }
+          }
+        }
       }
     }
   }
