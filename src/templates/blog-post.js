@@ -5,7 +5,7 @@ import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
-import Gallery from '../components/Gallery'
+ import Gallery from '../components/Gallery'
 
 export const BlogPostTemplate = ({
   content,
@@ -34,12 +34,14 @@ export const BlogPostTemplate = ({
             <p>{description}</p>
             <PostContent content={content} />
 
-            <div className="columns">
-              <div className="column is-12">
-                <Gallery images={images} />
+            {images && images.length > 0 ? (
+              <div className="columns">
+                <div className="column is-12">
+                  <Gallery images={images} />
+                </div>
               </div>
-            </div>
-
+            ) : null}
+            
             {tags && tags.length ? (
               <div style={{ marginTop: `4rem` }}>
                 <h4>Tags</h4>

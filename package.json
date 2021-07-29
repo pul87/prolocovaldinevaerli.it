@@ -50,5 +50,7 @@
   "devDependencies": {
     "prettier": "^1.15.3"
   },
-  "engines" : { "node" : ">=10.13.0" } 
+  "engines": {
+    "node": ">=10.13.0"
+  }
 }
