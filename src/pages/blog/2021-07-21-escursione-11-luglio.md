@@ -5,7 +5,13 @@ date: 2021-07-21T19:17:03.713Z
 published: true
 description: Erli e i suoi tesori - Giornata nazionale Proloco d'Italia
 featuredimage: /img/5.jpeg
-gallery: []
+gallery:
+  - /img/7.jpeg
+  - /img/12.jpeg
+  - /img/9.jpeg
+  - /img/4.jpeg
+  - /img/5.jpeg
+  - /img/6.jpeg
 tags:
   - escursioni
 ---
