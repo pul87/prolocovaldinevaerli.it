@@ -25,7 +25,7 @@ Da qui, percorrendo la **Via del Sale**, abbiamo raggiunto l'**Arma Veirana**.
 
 Lungo il percorso abbiamo avuto modo di **raccontare alcune curiosità relative alla Via del Sale** e a come alcuni luoghi abbiano un **nome derivato da eventi storici passati** che oggi sono tornati ad essere **molto attuali** come il "**Lago dei Rastrelli**". 
 
-> Venite a scoprire questa ed altre storie leggendo i cartelli informativi lungo il percorso!
+>Venite a scoprire questa ed altre storie leggendo i cartelli informativi lungo il percorso!
 
 Infine **visita guidata all'Arma Veirana** dove abbiamo raccontato la **storia dei ritrovamenti** e delle **collaborazioni** con le **prestigiose Università italiane ed internazionali** che seguono gli scavi.
 
