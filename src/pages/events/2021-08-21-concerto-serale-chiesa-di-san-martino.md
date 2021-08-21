@@ -1,7 +1,7 @@
 ---
 templateKey: event-post
 title: Concerto serale Chiesa di San Martino
-date: 2021-08-21T19:10:44.920Z
+date: 2021-08-28T19:00:00.000Z
 description: ''
 featuredimage: /img/concerto-flauto-arpa-erli-san-martino.jpeg
 tags:
