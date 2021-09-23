@@ -1,7 +1,7 @@
 ---
 templateKey: event-post
-title: ERLI E LA VIA DEL SALE - Avventura lungo il fiume Neva
-date: 2021-09-23T05:28:55.799Z
+title: ERLI E LA VIA DEL SALE - Avventura lungo il fiume Neva - 26 Settembre 2021
+date: 2021-09-26T07:00:00.000Z
 description: in collaborazione con Wildbormida
 featuredimage: /img/erli-via-del-sale-wildbormida-26-09-2021.png
 tags:
