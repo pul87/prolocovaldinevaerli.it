@@ -2,6 +2,7 @@
 templateKey: blog-post
 title: Buon Natale e buona lettura!
 date: 2022-12-24T18:05:23.516Z
+published: true
 description: Giornalino attività 2022!
 featuredimage: /img/natale-2022.jpg
 tags:
