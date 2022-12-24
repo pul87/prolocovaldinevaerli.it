@@ -75,7 +75,7 @@ export default () => (
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
           filter: { frontmatter: { templateKey: { eq: "blog-post" }, published: {eq: true} } }
-          limit: 3
+          limit: 10
         ) {
           edges {
             node {
