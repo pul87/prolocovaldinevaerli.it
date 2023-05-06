@@ -8,6 +8,7 @@ import EventRoll from '../components/EventRoll'
 import InstaRoll from '../components/InstaRoll'
 
 import instagram from '../img/social/instagram.svg'
+import cartaSentieri from '../img/carta-sentieri.jpg'
 
 export const IndexPageTemplate = ({
   image,
@@ -73,6 +74,15 @@ export const IndexPageTemplate = ({
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
+                <div>
+                  <h3>Scopri i nostri sentieri</h3>
+                  <a target='_blank' href="https://drive.google.com/file/d/1XodCPgN7KevrdcM4I9lRB-TMmUd_NLpn/view?usp=sharing">
+                    <img src={cartaSentieri} alt="Carta sentieri erli"/>
+                  </a>
+                  <p>
+                    Scopri i nostri sentieri? <a href="/sentieri">Clicca qui</a>
+                  </p>
+                </div>
                 <h3 className="section-title has-text-weight-semibold is-size-2">
                   Eventi
                 </h3>
