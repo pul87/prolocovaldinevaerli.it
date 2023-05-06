@@ -1,9 +1,8 @@
 ---
-templateKey: event-post
+templateKey: blog-post
 title: "Auguri di Fine Anno \U0001F384"
 date: 2019-12-27T23:00:00.000Z
-description: ' '
-featuredpost: false
+published: true
 featuredimage: /img/natale-1.png
 tags:
   - natale
