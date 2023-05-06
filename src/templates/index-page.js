@@ -76,7 +76,7 @@ export const IndexPageTemplate = ({
               <div className="content">
                 <div>
                   <h3>Scopri i nostri sentieri</h3>
-                  <a target='_blank' href="https://drive.google.com/file/d/1XodCPgN7KevrdcM4I9lRB-TMmUd_NLpn/view?usp=sharing">
+                  <a target='_blank' rel="noreferrer" href="https://drive.google.com/file/d/1XodCPgN7KevrdcM4I9lRB-TMmUd_NLpn/view?usp=sharing">
                     <img src={cartaSentieri} alt="Carta sentieri erli"/>
                   </a>
                   <p>
