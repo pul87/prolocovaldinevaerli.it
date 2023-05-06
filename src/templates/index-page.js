@@ -80,7 +80,7 @@ export const IndexPageTemplate = ({
                     <img src={cartaSentieri} alt="Carta sentieri erli"/>
                   </a>
                   <p>
-                    Scopri i nostri sentieri? <a href="/sentieri">Clicca qui</a>
+                    Clicca per scoprire tutti i sentieri <a href="/sentieri">Clicca qui</a>
                   </p>
                 </div>
                 <h3 className="section-title has-text-weight-semibold is-size-2">
