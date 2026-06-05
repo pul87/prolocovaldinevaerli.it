@@ -6,7 +6,7 @@ Il progetto usa Gatsby e Netlify CMS: i contenuti vengono modificati dal pannell
 
 ## Stack
 
-- Gatsby 2
+- Gatsby 3
 - React 16
 - Netlify CMS
 - contenuti Markdown in `src/pages`
@@ -17,18 +17,18 @@ Il progetto usa Gatsby e Netlify CMS: i contenuti vengono modificati dal pannell
 
 ## Requisiti
 
-Il progetto è legacy e richiede una versione Node compatibile con Gatsby 2 e `node-sass`.
+Il progetto è legacy, ma la baseline runtime attuale è Node 16.
 
-La versione attualmente indicata è:
+La versione indicata in `.nvmrc` è:
 
 ```bash
-v12.13.0
+v16.20.2
 ```
 
 Usare `nvm`:
 
 ```bash
-nvm install 12.13.0
+nvm install 16.20.2
 nvm use
 ```
 
@@ -104,6 +104,7 @@ Impostazioni principali:
 - comando build: `npm run build`
 - cartella pubblicata: `public`
 - funzioni Netlify: `lambda`
+- Node build: `16.20.2`
 
 ## CMS
 
@@ -134,7 +135,7 @@ Il pannello admin è disponibile in produzione su:
 
 ## Note tecniche
 
-Questo progetto è datato e contiene dipendenze obsolete, tra cui Gatsby 2, React 16, Netlify CMS e `node-sass`.
+Questo progetto è datato e contiene ancora dipendenze obsolete, tra cui React 16, Netlify CMS e `gatsby-image`.
 
 Il piano di aggiornamento graduale è documentato in:
 

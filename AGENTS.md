@@ -8,7 +8,7 @@ Questo repository contiene il sito statico `prolocovaldinevaerli.it`.
 
 Stack principale:
 
-- Gatsby 2
+- Gatsby 3
 - React 16
 - Netlify CMS
 - contenuti Markdown in `src/pages`
@@ -54,8 +54,8 @@ nvm use
 oppure:
 
 ```bash
-nvm install 12.13.0
-nvm use 12.13.0
+nvm install 16.20.2
+nvm use 16.20.2
 ```
 
 Non modificare `.nvmrc` senza approvazione.

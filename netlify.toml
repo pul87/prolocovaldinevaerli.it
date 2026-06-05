@@ -2,3 +2,6 @@
   publish = "public"
   command = "npm run build"
   functions = "lambda"
+
+[build.environment]
+  NODE_VERSION = "16.20.2"
