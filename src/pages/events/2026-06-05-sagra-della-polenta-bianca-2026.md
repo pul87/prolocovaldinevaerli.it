@@ -3,8 +3,7 @@ templateKey: event-post
 title: Sagra della Polenta Bianca 2026
 date: 2026-06-13T07:43:16.013Z
 featuredimage: /img/whatsapp-image-2026-05-16-at-16.29.47.jpeg
-tags:
-  - ''
+tags: []
 ---
 ## **🍽️ Torna la Sagra della Polenta Bianca a Erli! 🎶**
 
