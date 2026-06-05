@@ -5,7 +5,7 @@
   "author": "Paolo Baso",
   "dependencies": {
     "bulma": "1.0.4",
-    "decap-cms-app": "3.6.2",
+    "decap-cms-app": "3.6.4",
     "decap-cms-media-library-cloudinary": "^3.1.0",
     "decap-cms-media-library-uploadcare": "^3.0.2",
     "gatsby": "^5.16.1",
