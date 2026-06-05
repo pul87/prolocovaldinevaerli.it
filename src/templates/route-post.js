@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
+import { getSrc } from 'gatsby-plugin-image'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import Gallery from '../components/Gallery'
@@ -23,11 +24,12 @@ export const RoutePostTemplate = ({
 }) => {
 
   const PostContent = contentComponent || Content
-  const images = gallery.map( g => {
-    return ({ 
-      original: g.childImageSharp.original.src, 
-      thumbnail: g.childImageSharp.thumbnail.src 
-    })});
+  const images = (gallery || [])
+    .map(g => ({
+      original: g.publicURL,
+      thumbnail: getSrc(g) || g.publicURL,
+    }))
+    .filter(image => image.original)
   return (
     <section className="section">
       {helmet || ''}
@@ -159,13 +161,9 @@ export const pageQuery = graphql`
         duration
         difficulty
         gallery {
+          publicURL
           childImageSharp {
-            thumbnail: fixed(width: 300) {
-              src
-            }
-            original {
-              src
-            }
+            gatsbyImageData(width: 300, quality: 80, layout: CONSTRAINED)
           }
         }
       }

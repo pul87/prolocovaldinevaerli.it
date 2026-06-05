@@ -2,33 +2,33 @@
 
 Sito statico della Pro Loco Val di Neva Erli.
 
-Il progetto usa Gatsby e Netlify CMS: i contenuti vengono modificati dal pannello CMS, salvati come Markdown nel repository e ricostruiti automaticamente da Netlify.
+Il progetto usa Gatsby e Decap CMS: i contenuti vengono modificati dal pannello CMS, salvati come Markdown nel repository e ricostruiti automaticamente da Netlify.
 
 ## Stack
 
-- Gatsby 3
-- React 16
-- Netlify CMS
+- Gatsby 5
+- React 18
+- Decap CMS
 - contenuti Markdown in `src/pages`
 - asset statici in `static`
 - Bulma + Sass
-- Gatsby Image / Sharp
+- Gatsby Plugin Image / Sharp
 - deploy Netlify tramite `netlify.toml`
 
 ## Requisiti
 
-Il progetto è legacy, ma la baseline runtime attuale è Node 16.
+La baseline runtime attuale è Node 22.
 
 La versione indicata in `.nvmrc` è:
 
 ```bash
-v16.20.2
+v22.22.3
 ```
 
 Usare `nvm`:
 
 ```bash
-nvm install 16.20.2
+nvm install 22.22.3
 nvm use
 ```
 
@@ -104,11 +104,11 @@ Impostazioni principali:
 - comando build: `npm run build`
 - cartella pubblicata: `public`
 - funzioni Netlify: `lambda`
-- Node build: `16.20.2`
+- Node build: `22.22.3`
 
 ## CMS
 
-La configurazione Netlify CMS è in:
+La configurazione Decap CMS è in:
 
 ```text
 static/admin/config.yml
@@ -135,7 +135,7 @@ Il pannello admin è disponibile in produzione su:
 
 ## Note tecniche
 
-Questo progetto è datato e contiene ancora dipendenze obsolete, tra cui React 16, Netlify CMS e `gatsby-image`.
+Questo progetto nasce da uno stack legacy, ma ora usa Gatsby 5, React 18, Decap CMS e `gatsby-plugin-image`. Restano alcuni debiti tecnici, in particolare Sass/Bulma legacy e warning transitive del CMS.
 
 Il piano di aggiornamento graduale è documentato in:
 

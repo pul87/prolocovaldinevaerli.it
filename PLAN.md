@@ -4,16 +4,16 @@ Questo documento raccoglie le fasi consigliate per aggiornare gradualmente il pr
 
 ## Stato attuale
 
-Stack aggiornato sul branch `chore/upgrade-dependencies-audit`:
+Stack aggiornato sul branch `chore/upgrade-gatsby-5`:
 
-- Gatsby 3
-- React 16
-- Netlify CMS
+- Gatsby 5
+- React 18
+- Decap CMS
 - Markdown come sorgente contenuti
 - Bulma + Sass (`sass`, non `node-sass`)
-- Gatsby Image / Sharp legacy
+- Gatsby Plugin Image / Sharp
 - Netlify deploy con `netlify.toml`
-- Node indicato in `.nvmrc`: `v16.20.2`
+- Node indicato in `.nvmrc`: `v22.22.3`
 - package manager scelto: npm
 
 Verifiche locali già eseguite:
@@ -22,18 +22,16 @@ Verifiche locali già eseguite:
 nvm use
 npm ci
 npm run build
-npm run start
 ```
 
-I comandi risultano funzionanti. `npm run start` usa `gatsby develop` dopo aver ricreato `.cache`, necessaria con Gatsby 3.
+I comandi risultano funzionanti localmente su Node 22. `npm run start` usa `gatsby develop` dopo aver ricreato `.cache`.
 
 Problemi/debito tecnico ancora presenti:
 
-- React è ancora 16.
-- `gatsby-image` è legacy; la sostituzione moderna è `gatsby-plugin-image`.
-- Netlify CMS è vecchio; oggi il successore è Decap CMS.
-- L'audit npm segnala ancora vulnerabilità residue: 128 totali (`7 low`, `54 moderate`, `56 high`, `11 critical`).
-- Alcune dipendenze transitive installate dichiarano engine Node `>=18`, anche se la build Node 16 passa.
+- Bulma/Sass usano ancora import Sass legacy e generano warning di deprecazione.
+- Decap CMS porta alcune dipendenze transitive vecchie e warning npm peer/deprecation, anche se installazione e build passano senza `--force` o `--legacy-peer-deps`.
+- L'audit npm segnala ancora vulnerabilità residue: 73 totali (`10 low`, `40 moderate`, `23 high`).
+- `gatsby-plugin-react-helmet` è ancora usato, anche se Gatsby 5 supporta la Head API nativa.
 - Il vecchio plugin `gatsby-source-instagram` è stato rimosso perché basato su scraping fragile/non più affidabile.
 
 ---
@@ -145,29 +143,42 @@ La funzionalità è stata rimossa dalla build. Se si vuole ripristinare il feed 
 
 ## Fase 4 — Modernizzazione completa
 
-Stato: **non iniziata**.
+Stato: **in corso, build locale completata**.
 
 Obiettivo: aggiornare il progetto allo stack moderno Gatsby.
 
-Attività previste:
+Attività completate localmente:
 
-1. Valutare upgrade a Gatsby 5.
-2. Aggiornare React a 18 o 19, secondo compatibilità effettiva.
-3. Migrare da `gatsby-image` a `gatsby-plugin-image`.
-4. Aggiornare le query immagini e i componenti che usano immagini responsive.
-5. Sostituire Netlify CMS con Decap CMS, se necessario/opportuno.
-6. Valutare se mantenere o rimuovere i media library package:
-   - `netlify-cms-media-library-cloudinary`;
-   - `netlify-cms-media-library-uploadcare`.
-7. Valutare ripristino feed Instagram via API ufficiale + Netlify Function.
-8. Aggiornare Node a una LTS moderna, ad esempio Node 20 o 22, se compatibile con Netlify e dipendenze finali.
+1. Upgrade a Gatsby 5.
+2. Aggiornamento React a 18.
+3. Aggiornamento Node locale e Netlify a `22.22.3`.
+4. Migrazione da `gatsby-image` a `gatsby-plugin-image`.
+5. Aggiornamento query immagini e componenti che usano immagini responsive.
+6. Migrazione Netlify CMS → Decap CMS, necessaria per evitare conflitti peer con React 18/Gatsby 5.
+7. Sostituzione media library package Netlify CMS con equivalenti Decap CMS:
+   - `decap-cms-media-library-cloudinary`;
+   - `decap-cms-media-library-uploadcare`.
+8. Aggiornamento sintassi GraphQL di sort/group legacy.
+9. Verifica locale:
 
-Output atteso:
+   ```bash
+   nvm use
+   npm ci
+   npm run build
+   ```
 
-- stack moderno;
-- supporto a Node LTS recente;
-- dipendenze principali aggiornate;
-- minori rischi futuri in fase di build.
+Da verificare prima del merge/deploy:
+
+- deploy preview Netlify con Node 22;
+- smoke test homepage, blog, eventi, sentieri, tag, immagini e gallerie;
+- pannello `/admin` Decap CMS;
+- login CMS e salvataggio/preview contenuti.
+
+Fuori scope per questa fase, salvo decisione diversa:
+
+- ripristino feed Instagram via API ufficiale + Netlify Function;
+- migrazione da `react-helmet` alla Gatsby Head API;
+- aggiornamento/migrazione completa Bulma/Sass.
 
 ---
 

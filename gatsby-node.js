@@ -1,7 +1,31 @@
 const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+
+const toPosixPath = filePath => filePath.split(path.sep).join('/')
+
+const frontmatterImagesToRelative = (value, markdownFileAbsolutePath) => {
+  if (typeof value === 'string' && value.startsWith('/img/')) {
+    const imageAbsolutePath = path.join(__dirname, 'static', value)
+    return toPosixPath(
+      path.relative(path.dirname(markdownFileAbsolutePath), imageAbsolutePath)
+    )
+  }
+
+  if (Array.isArray(value)) {
+    return value.map(item =>
+      frontmatterImagesToRelative(item, markdownFileAbsolutePath)
+    )
+  }
+
+  if (value && typeof value === 'object') {
+    Object.keys(value).forEach(key => {
+      value[key] = frontmatterImagesToRelative(value[key], markdownFileAbsolutePath)
+    })
+  }
+
+  return value
+}
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -74,9 +98,9 @@ exports.createPages = ({ actions, graphql }) => {
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
-  fmImagesToRelative(node) // convert image paths for gatsby images
-
   if (node.internal.type === `MarkdownRemark`) {
+    frontmatterImagesToRelative(node.frontmatter, node.fileAbsolutePath)
+
     const value = createFilePath({ node, getNode })
     createNodeField({
       name: `slug`,
