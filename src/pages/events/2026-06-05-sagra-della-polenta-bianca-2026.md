@@ -19,7 +19,7 @@ Sarà attivo anche il servizio bar e l’area ristorante coperta, per godersi la
 
 Un’occasione perfetta per vivere una festa di paese autentica, tra sapori tradizionali e atmosfera ligure.
 
-📍 Erli – Campo sportivo
+📍 **Erli – Campo sportivo**
 
 📅 13 e 14 giugno
 
