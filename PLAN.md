@@ -4,11 +4,12 @@ Questo documento raccoglie le fasi consigliate per aggiornare gradualmente il pr
 
 ## Stato attuale
 
-Stack aggiornato sul branch `chore/upgrade-gatsby-5`:
+Stack attuale in produzione:
 
 - Gatsby 5
 - React 18
-- Decap CMS
+- Decap CMS `3.6.4`
+- override Decap allineato: `decap-cms-core@3.6.3`
 - Markdown come sorgente contenuti
 - Bulma + Sass (`sass`, non `node-sass`)
 - Gatsby Plugin Image / Sharp
@@ -29,7 +30,8 @@ I comandi risultano funzionanti localmente su Node 22. `npm run start` usa `gats
 Problemi/debito tecnico ancora presenti:
 
 - Decap CMS porta alcune dipendenze transitive vecchie e warning npm peer/deprecation, anche se installazione e build passano senza `--force` o `--legacy-peer-deps`.
-- L'audit npm segnala ancora vulnerabilità residue: 72 totali (`9 low`, `40 moderate`, `23 high`).
+- `decap-cms-app@3.6.4` è la massima versione adottata con React 18; `decap-cms-app@3.7+` richiede React 19 e va quindi valutato solo in una migrazione dedicata.
+- L'audit npm segnala ancora vulnerabilità residue: 72 totali (`9 low`, `40 moderate`, `23 high`). Molti fix automatici propongono downgrade o breaking change, quindi non usare `npm audit fix --force`.
 - Può restare il warning Sass `legacy-js-api` dalla toolchain Gatsby/Sass, non dal Sass del progetto.
 - Può restare il warning Decap CMS `Critical dependency: the request of a dependency is an expression` da `gatsby-plugin-decap-cms`.
 - I metadati HTML sono stati migrati alla Gatsby Head API.
@@ -248,7 +250,8 @@ Rimandato/opzionale:
 
 - aggiornamento `renovate.json`, se si vuole automatizzare il controllo aggiornamenti;
 - aggiunta lint/format/check link strutturati;
-- monitorare futuri aggiornamenti di `gatsby-plugin-sass`/`sass-loader` per rimuovere il warning `legacy-js-api` quando disponibile.
+- monitorare futuri aggiornamenti di `gatsby-plugin-sass`/`sass-loader` per rimuovere il warning `legacy-js-api` quando disponibile;
+- valutare React 19 solo in una fase dedicata, perché necessario per Decap CMS `3.7+` ma potenzialmente impattante su Gatsby e plugin.
 
 ---
 

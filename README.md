@@ -160,6 +160,8 @@ Warning noti:
 - Sass/Bulma: Bulma è aggiornato a `1.0.4` e `src/components/all.sass` usa `@use` invece di `@import`. La build usa la variante `bulma/versions/bulma-no-dark-mode` per evitare CSS dark-mode non necessario.
 - Sass toolchain: può restare il warning `legacy-js-api`, proveniente dalla catena Sass/Gatsby; è non bloccante con la versione attuale.
 - Decap CMS: Gatsby può mostrare un warning `Critical dependency: the request of a dependency is an expression` proveniente da `gatsby-plugin-decap-cms`. È un warning noto del plugin; build e pannello `/admin` sono stati verificati.
+- Decap CMS è fissato a `decap-cms-app@3.6.4`, con override `decap-cms-core@3.6.3`. Le versioni `decap-cms-app@3.7+` richiedono React 19, mentre il progetto resta su React 18 per compatibilità con Gatsby e plugin installati.
+- `npm audit` segnala ancora vulnerabilità transitive nella toolchain Gatsby/Decap. Non usare `npm audit fix --force`: diversi fix proposti comportano downgrade o breaking change non compatibili.
 
 Il piano di aggiornamento graduale è documentato in:
 
