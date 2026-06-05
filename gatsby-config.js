@@ -11,8 +11,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        indentedSyntax: true
-      }
+        implementation: require('sass'),
+        sassOptions: {
+          indentedSyntax: true,
+        },
+      },
     },
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
