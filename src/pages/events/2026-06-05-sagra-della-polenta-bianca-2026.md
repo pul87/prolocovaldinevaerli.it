@@ -6,7 +6,7 @@ featuredimage: /img/whatsapp-image-2026-05-16-at-16.29.47.jpeg
 tags:
   - ''
 ---
-🍽️ Torna la Sagra della Polenta Bianca a Erli! 🎶
+## **🍽️ Torna la Sagra della Polenta Bianca a Erli! 🎶**
 
 Sabato 13 e domenica 14 giugno, presso il campo sportivo di Erli, vi aspetta un weekend all’insegna della buona cucina, della musica dal vivo e della convivialità.
 
@@ -25,3 +25,5 @@ Un’occasione perfetta per vivere una festa di paese autentica, tra sapori trad
 📅 13 e 14 giugno
 
 ⏰ Dalle ore 19:00
+
+![Locandina Sagra della Polenta Bianca Erli 2026](/img/whatsapp-image-2026-05-16-at-16.29.47.jpeg "Sagra della Polenta Bianca Erli Liguria 2026")
