@@ -28,10 +28,12 @@ I comandi risultano funzionanti localmente su Node 22. `npm run start` usa `gats
 
 Problemi/debito tecnico ancora presenti:
 
-- Bulma/Sass usano ancora import Sass legacy e generano warning di deprecazione.
 - Decap CMS porta alcune dipendenze transitive vecchie e warning npm peer/deprecation, anche se installazione e build passano senza `--force` o `--legacy-peer-deps`.
 - L'audit npm segnala ancora vulnerabilità residue: 72 totali (`9 low`, `40 moderate`, `23 high`).
+- Può restare il warning Sass `legacy-js-api` dalla toolchain Gatsby/Sass, non dal Sass del progetto.
+- Può restare il warning Decap CMS `Critical dependency: the request of a dependency is an expression` da `gatsby-plugin-decap-cms`.
 - I metadati HTML sono stati migrati alla Gatsby Head API.
+- Bulma è stato aggiornato a `1.0.4` e il Sass del progetto usa `@use` invece di `@import`.
 - Il vecchio plugin `gatsby-source-instagram` è stato rimosso perché basato su scraping fragile/non più affidabile.
 
 ---
@@ -246,7 +248,7 @@ Rimandato/opzionale:
 
 - aggiornamento `renovate.json`, se si vuole automatizzare il controllo aggiornamenti;
 - aggiunta lint/format/check link strutturati;
-- migrazione o aggiornamento Bulma/Sass per eliminare alla radice le deprecazioni upstream.
+- monitorare futuri aggiornamenti di `gatsby-plugin-sass`/`sass-loader` per rimuovere il warning `legacy-js-api` quando disponibile.
 
 ---
 
