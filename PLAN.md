@@ -190,7 +190,7 @@ Fuori scope per questa fase, salvo decisione diversa:
 
 ## Fase 5 — Pulizia finale e hardening
 
-Stato: **in corso, build locale completata**.
+Stato: **completata e validata in deploy preview Netlify**.
 
 Obiettivo: rendere il progetto più mantenibile nel tempo.
 
@@ -218,7 +218,7 @@ Attività completate localmente:
    npm run build
    ```
 
-Da verificare prima del merge/deploy:
+Verifiche completate:
 
 - `npm run serve` e smoke test locale post-build;
 - deploy preview Netlify;
@@ -230,6 +230,11 @@ Da verificare prima del merge/deploy:
 - eventi;
 - sentieri;
 - admin CMS.
+
+Da verificare dopo il merge:
+
+- deploy produzione Netlify;
+- smoke test rapido produzione.
 
 Rimandato/opzionale:
 
