@@ -1,6 +1,9 @@
 import React from 'react'
 import Layout from '../../components/Layout'
 import BlogRoll from '../../components/BlogRoll'
+import Seo from '../../components/Seo'
+
+export const Head = () => <Seo title="Ultime notizie" />
 
 export default class BlogIndexPage extends React.Component {
   render() {

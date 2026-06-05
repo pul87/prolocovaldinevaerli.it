@@ -1,13 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import { getSrc } from 'gatsby-plugin-image'
 import Layout from '../components/Layout'
 import Content, { HTMLContent } from '../components/Content'
 import Gallery from '../components/Gallery'
 import Breadcrumb from '../components/Breadcrumb';
+import Seo from '../components/Seo'
 
 export const RoutePostTemplate = ({
   content,
@@ -20,7 +20,6 @@ export const RoutePostTemplate = ({
   duration,
   difficulty,
   slug,
-  helmet,
 }) => {
 
   const PostContent = contentComponent || Content
@@ -32,7 +31,6 @@ export const RoutePostTemplate = ({
     .filter(image => image.original)
   return (
     <section className="section">
-      {helmet || ''}
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -99,7 +97,6 @@ RoutePostTemplate.propTypes = {
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
-  helmet: PropTypes.object,
 }
 
 const RoutePost = ({ data }) => {
@@ -116,19 +113,6 @@ const RoutePost = ({ data }) => {
         duration={post.frontmatter.duration}
         difficulty={post.frontmatter.difficulty}
         slug={post.fields.slug}
-        helmet={
-          <Helmet titleTemplate="%s | Sentiero">
-            <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description}`}
-            />
-            <meta 
-              name="keywords" 
-              content="sentieri,liguria,outdoor,trekking,erli,comunedierli,comune,valneva,altaviadeimontiliguri,italia,turismo,territorio"
-            />
-          </Helmet>
-        }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
@@ -143,6 +127,19 @@ RoutePost.propTypes = {
 }
 
 export default RoutePost
+
+export const Head = ({ data }) => {
+  const { markdownRemark: post } = data
+
+  return (
+    <Seo
+      title={post.frontmatter.title}
+      titleSuffix="Sentiero"
+      description={post.frontmatter.description}
+      keywords="sentieri,liguria,outdoor,trekking,erli,comunedierli,comune,valneva,altaviadeimontiliguri,italia,turismo,territorio"
+    />
+  )
+}
 
 export const pageQuery = graphql`
   query RoutePostByID($id: String!) {

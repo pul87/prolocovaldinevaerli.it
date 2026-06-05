@@ -13,7 +13,6 @@
     "gatsby-plugin-image": "^3.16.0",
     "gatsby-plugin-netlify": "^5.1.1",
     "gatsby-plugin-purgecss": "^6.2.1",
-    "gatsby-plugin-react-helmet": "^6.16.0",
     "gatsby-plugin-sass": "^6.16.0",
     "gatsby-plugin-sharp": "^5.16.0",
     "gatsby-plugin-sitemap": "^6.16.0",
@@ -29,7 +28,6 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
     "react-image-gallery": "^2.1.2",
     "sass": "^1.100.0",
     "uuid": "^3.2.1"
@@ -45,7 +43,8 @@
     "build": "npm run clean && gatsby build",
     "develop": "npm run clean && mkdir -p .cache && gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "gatsby serve"
   },
   "devDependencies": {
     "prettier": "^1.15.3"

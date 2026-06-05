@@ -81,12 +81,28 @@ public
 npm run clean
 ```
 
+## Preview locale della build
+
+Dopo una build produzione è possibile servire localmente la cartella `public`:
+
+```bash
+npm run build
+npm run serve
+```
+
+Il sito viene normalmente esposto su:
+
+```text
+http://localhost:9000
+```
+
 ## Script disponibili
 
 ```bash
 npm run develop
 npm start
 npm run build
+npm run serve
 npm run clean
 npm run format
 ```
@@ -135,7 +151,9 @@ Il pannello admin è disponibile in produzione su:
 
 ## Note tecniche
 
-Questo progetto nasce da uno stack legacy, ma ora usa Gatsby 5, React 18, Decap CMS e `gatsby-plugin-image`. Restano alcuni debiti tecnici, in particolare Sass/Bulma legacy e warning transitive del CMS.
+Questo progetto nasce da uno stack legacy, ma ora usa Gatsby 5, React 18, Decap CMS e `gatsby-plugin-image`. I metadati HTML sono gestiti tramite Gatsby Head API.
+
+Restano alcuni debiti tecnici, in particolare Sass/Bulma legacy e warning transitive del CMS.
 
 Il piano di aggiornamento graduale è documentato in:
 

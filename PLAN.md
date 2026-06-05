@@ -30,8 +30,8 @@ Problemi/debito tecnico ancora presenti:
 
 - Bulma/Sass usano ancora import Sass legacy e generano warning di deprecazione.
 - Decap CMS porta alcune dipendenze transitive vecchie e warning npm peer/deprecation, anche se installazione e build passano senza `--force` o `--legacy-peer-deps`.
-- L'audit npm segnala ancora vulnerabilità residue: 73 totali (`10 low`, `40 moderate`, `23 high`).
-- `gatsby-plugin-react-helmet` è ancora usato, anche se Gatsby 5 supporta la Head API nativa.
+- L'audit npm segnala ancora vulnerabilità residue: 72 totali (`9 low`, `40 moderate`, `23 high`).
+- I metadati HTML sono stati migrati alla Gatsby Head API.
 - Il vecchio plugin `gatsby-source-instagram` è stato rimosso perché basato su scraping fragile/non più affidabile.
 
 ---
@@ -190,15 +190,13 @@ Fuori scope per questa fase, salvo decisione diversa:
 
 ## Fase 5 — Pulizia finale e hardening
 
-Stato: **non iniziata**.
+Stato: **in corso, build locale completata**.
 
 Obiettivo: rendere il progetto più mantenibile nel tempo.
 
-Attività previste:
+Attività completate localmente:
 
-1. Rimuovere dipendenze inutilizzate.
-2. Aggiornare `renovate.json`, se si vuole automatizzare il controllo aggiornamenti.
-3. Aggiungere script utili, ad esempio:
+1. Aggiunto script `serve`:
 
    ```json
    {
@@ -206,28 +204,38 @@ Attività previste:
    }
    ```
 
-4. Eventualmente aggiungere controlli minimi:
-   - lint;
-   - format;
-   - smoke test build;
-   - controllo link principali.
-5. Aggiornare definitivamente il README.
-6. Fare un deploy preview Netlify e verificare manualmente:
-   - rendering homepage;
-   - navigazione;
-   - immagini;
-   - blog;
-   - eventi;
-   - sentieri;
-   - admin CMS;
-   - form o funzioni Netlify, se usate.
+2. Migrazione da `react-helmet` alla Gatsby Head API.
+3. Rimozione dipendenze non più necessarie:
+   - `react-helmet`;
+   - `gatsby-plugin-react-helmet`.
+4. Aggiornamento `gatsby-config.js`.
+5. Aggiornamento README con script `serve` e nota Head API.
+6. Verifica locale:
 
-Output atteso:
+   ```bash
+   nvm use
+   npm install
+   npm run build
+   ```
 
-- progetto documentato;
-- upgrade completato;
-- deploy preview validato;
-- pronto per merge su `master`.
+Da verificare prima del merge/deploy:
+
+- `npm run serve` e smoke test locale post-build;
+- deploy preview Netlify;
+- rendering homepage;
+- titoli/meta principali;
+- navigazione;
+- immagini;
+- blog;
+- eventi;
+- sentieri;
+- admin CMS.
+
+Rimandato/opzionale:
+
+- aggiornamento `renovate.json`, se si vuole automatizzare il controllo aggiornamenti;
+- aggiunta lint/format/check link strutturati;
+- migrazione o aggiornamento Bulma/Sass per rimuovere warning di deprecazione.
 
 ---
 
@@ -235,19 +243,17 @@ Output atteso:
 
 Non aggiornare tutto in un unico commit se possibile.
 
-Per lo stato attuale del branch, un commit coerente potrebbe essere:
+Per lo stato attuale del branch di Fase 5, un commit coerente potrebbe essere:
 
 ```text
-chore: upgrade Gatsby baseline to Node 16
+chore: finalize Gatsby hardening
 ```
 
 Contenuto del commit:
 
-- upgrade Gatsby 3 e plugin correlati;
-- passaggio Node 16;
-- pulizia package manager npm;
-- rimozione plugin Instagram rotto;
-- aggiornamento documentazione;
-- fix script develop.
+- script `serve`;
+- migrazione Head API;
+- rimozione `react-helmet` e plugin Gatsby correlato;
+- aggiornamento documentazione.
 
 Prima del merge finale, fare smoke test manuale delle pagine principali e del pannello admin CMS in deploy preview Netlify.

@@ -2,6 +2,15 @@ import React from 'react'
 
 import Layout from '../../components/Layout'
 import RouteRoll from '../../components/RouteRoll'
+import Seo from '../../components/Seo'
+
+export const Head = () => (
+  <Seo
+    title="Sentieri"
+    description="Outdoor e trekking a Erli"
+    keywords="sentieri,liguria,outdoor,trekking,erli,comunedierli,comune,valneva,altaviadeimontiliguri,italia,turismo,territorio"
+  />
+)
 
 export default class BlogIndexPage extends React.Component {
   render() {

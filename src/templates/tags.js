@@ -1,7 +1,7 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Seo from '../components/Seo'
 
 class TagRoute extends React.Component {
   render() {
@@ -16,14 +16,12 @@ class TagRoute extends React.Component {
       </li>)
     })
     const tag = this.props.pageContext.tag
-    const title = this.props.data.site.siteMetadata.title
     const totalCount = this.props.data.allMarkdownRemark.totalCount
     const tagHeader = `${totalCount} post con tag “${tag}”`
 
     return (
       <Layout>
         <section className="section">
-          <Helmet title={`${tag} | ${title}`} />
           <div className="container content">
             <div className="columns">
               <div
@@ -45,6 +43,10 @@ class TagRoute extends React.Component {
 }
 
 export default TagRoute
+
+export const Head = ({ data, pageContext }) => (
+  <Seo title={pageContext.tag} titleSuffix={data.site.siteMetadata.title} />
+)
 
 export const tagPageQuery = graphql`
   query TagPage($tag: String) {

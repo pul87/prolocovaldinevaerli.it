@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import { getSrc } from 'gatsby-plugin-image'
 
 import Layout from '../components/Layout'
+import Seo from '../components/Seo'
 import BlogRoll from '../components/BlogRoll'
 import EventRoll from '../components/EventRoll'
 import InstaRoll from '../components/InstaRoll'
@@ -160,6 +161,12 @@ IndexPage.propTypes = {
 }
 
 export default IndexPage
+
+export const Head = ({ data }) => {
+  const { frontmatter } = data.markdownRemark
+
+  return <Seo title={frontmatter.title} titleSuffix={null} description={frontmatter.description} />
+}
 
 export const pageQuery = graphql`
   query IndexPageTemplate {
