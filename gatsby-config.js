@@ -13,6 +13,7 @@ module.exports = {
         implementation: require('sass'),
         sassOptions: {
           indentedSyntax: true,
+          quietDeps: true,
         },
       },
     },

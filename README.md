@@ -155,6 +155,12 @@ Questo progetto nasce da uno stack legacy, ma ora usa Gatsby 5, React 18, Decap 
 
 Restano alcuni debiti tecnici, in particolare Sass/Bulma legacy e warning transitive del CMS.
 
+Warning noti:
+
+- Sass/Bulma: la configurazione usa `quietDeps: true` per ridurre le deprecazioni provenienti da dipendenze in `node_modules`; eventuali warning nel Sass del progetto restano visibili. Le deprecazioni `@import` in `src/components/all.sass` sono note e richiedono una futura migrazione/aggiornamento Bulma.
+- Sass toolchain: può restare il warning `legacy-js-api`, proveniente dalla catena Sass/Gatsby; è non bloccante con la versione attuale.
+- Decap CMS: Gatsby può mostrare un warning `Critical dependency: the request of a dependency is an expression` proveniente da `gatsby-plugin-decap-cms`. È un warning noto del plugin; build e pannello `/admin` sono stati verificati.
+
 Il piano di aggiornamento graduale è documentato in:
 
 ```text

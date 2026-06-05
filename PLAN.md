@@ -236,11 +236,17 @@ Da verificare dopo il merge:
 - deploy produzione Netlify;
 - smoke test rapido produzione.
 
+Warning noti/gestiti:
+
+- Sass/Bulma: configurato `quietDeps: true` per ridurre le deprecazioni provenienti da dipendenze in `node_modules` senza nascondere eventuali warning nel Sass del progetto. Le deprecazioni `@import` residue in `src/components/all.sass` sono note e richiedono una futura migrazione/aggiornamento Bulma.
+- Sass toolchain: resta possibile il warning `legacy-js-api`, proveniente dalla catena Sass/Gatsby; è non bloccante con la versione attuale.
+- Decap CMS: resta possibile il warning `Critical dependency: the request of a dependency is an expression` da `gatsby-plugin-decap-cms`; è documentato come warning noto del plugin, con build e admin verificati.
+
 Rimandato/opzionale:
 
 - aggiornamento `renovate.json`, se si vuole automatizzare il controllo aggiornamenti;
 - aggiunta lint/format/check link strutturati;
-- migrazione o aggiornamento Bulma/Sass per rimuovere warning di deprecazione.
+- migrazione o aggiornamento Bulma/Sass per eliminare alla radice le deprecazioni upstream.
 
 ---
 
