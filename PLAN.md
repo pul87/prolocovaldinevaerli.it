@@ -143,11 +143,11 @@ La funzionalità è stata rimossa dalla build. Se si vuole ripristinare il feed 
 
 ## Fase 4 — Modernizzazione completa
 
-Stato: **in corso, build locale completata**.
+Stato: **completata e validata in deploy preview Netlify**.
 
 Obiettivo: aggiornare il progetto allo stack moderno Gatsby.
 
-Attività completate localmente:
+Attività completate e validate:
 
 1. Upgrade a Gatsby 5.
 2. Aggiornamento React a 18.
@@ -167,12 +167,18 @@ Attività completate localmente:
    npm run build
    ```
 
-Da verificare prima del merge/deploy:
+Verifiche completate:
 
+- build locale con Node 22;
 - deploy preview Netlify con Node 22;
-- smoke test homepage, blog, eventi, sentieri, tag, immagini e gallerie;
-- pannello `/admin` Decap CMS;
-- login CMS e salvataggio/preview contenuti.
+- smoke test preview del sito;
+- pannello `/admin` Decap CMS verificato in preview.
+
+Da verificare dopo il merge:
+
+- deploy produzione Netlify;
+- smoke test rapido homepage produzione;
+- controllo rapido pannello `/admin` in produzione.
 
 Fuori scope per questa fase, salvo decisione diversa:
 
