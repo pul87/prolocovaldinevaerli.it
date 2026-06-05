@@ -62,7 +62,7 @@ RouteRoll.propTypes = {
   }),
 }
 
-export default () => (
+const RouteRollQuery = () => (
   <StaticQuery
     query={graphql`
       query RouteRollQuery {
@@ -97,3 +97,5 @@ export default () => (
     render={(data, count) => <RouteRoll data={data} count={count} />}
   />
 )
+
+export default RouteRollQuery

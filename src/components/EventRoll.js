@@ -68,7 +68,7 @@ EventRoll.propTypes = {
   }),
 }
 
-export default () => (
+const EventRollQuery = () => (
   <StaticQuery
     query={graphql`
       query EventRollQuery {
@@ -102,3 +102,5 @@ export default () => (
     render={(data, count) => <EventRoll data={data} count={count} />}
   />
 )
+
+export default EventRollQuery

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { EventPostTemplate } from '../../templates/event-post'
+import EventPostTemplate from '../../components/templates/EventPostTemplate'
 
 const EventPostPreview = ({ entry, widgetFor }) => (
   <EventPostTemplate

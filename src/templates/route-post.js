@@ -9,7 +9,7 @@ import Gallery from '../components/Gallery'
 import Breadcrumb from '../components/Breadcrumb';
 import Seo from '../components/Seo'
 
-export const RoutePostTemplate = ({
+const RoutePostTemplate = ({
   content,
   contentComponent,
   description,
