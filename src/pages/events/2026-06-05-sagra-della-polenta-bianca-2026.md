@@ -8,9 +8,9 @@ tags:
 ---
 ## **🍽️ Torna la Sagra della Polenta Bianca a Erli! 🎶**
 
-Sabato 13 e domenica 14 giugno, presso il campo sportivo di Erli, vi aspetta un weekend all’insegna della buona cucina, della musica dal vivo e della convivialità.
+**Sabato 13 e domenica 14 giugno**, presso il **campo sportivo di Erli**, vi aspetta un weekend all’insegna della buona cucina, della musica dal vivo e della convivialità.
 
-Gli stand gastronomici apriranno sabato dalle ore 19:00 e domenica solo la sera dalle ore 19:00, con tante specialità da gustare: polenta bianca al sugo di porri, polenta gialla al sugo di funghi, coniglio alla ligure, salsiccia, tomino alla griglia con pancetta, capocollo alla piastra, patatine fritte non surgelate e dolci.
+Gli stand gastronomici apriranno **sabato dalle ore 19:00** e **domenica solo la sera dalle ore 19:00**, con tante specialità da gustare: polenta bianca al sugo di porri, polenta gialla al sugo di funghi, coniglio alla ligure, salsiccia, tomino alla griglia con pancetta, capocollo alla piastra, patatine fritte non surgelate e dolci.
 
 🎵 Sabato sera musica dal vivo con l’orchestra Rosy e Francesco
 
